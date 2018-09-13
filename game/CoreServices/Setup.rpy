@@ -2,14 +2,14 @@
 # Post-install Setup Assistant (Pisa)
 # Author: Marquis Kurt (@alicerunsonfedora)
 # Copyright: (C) 2018
+
 init python:
     gametos = """\
-The Angel Returns is a Doki Doki Literature Club fan mod that is not affiliated
-with Team Salvato or theMeatly Games Ltd. It is designed to be played only after
-the official game has been completed, and contains spoilers for the official game(s).
-Game files for Doki Doki Literature Club are required to play this mod and can be
-downloaded for free at: http://ddlc.moe. This game also contains highly sensitive
-content and is not suitable for children or those who are easily disturbed.
+Doki Doki Endless Adventure is a Doki Doki Literature Club fan mod that is not
+affiliated with Team Salvato. It is desifned to be played only after the official
+game has been completed and contains spoilers for the official game. Game files
+for Doki Doki Literature Club are required to play this mod and can be downloaded
+for free at: {a=https://ddlc.moe}https://ddlc.mode{/a}.
 
 By clicking \"I Agree\", you acknowledge this disclaimer and continue at your own risk.
 """
@@ -25,7 +25,7 @@ By clicking \"I Agree\", you acknowledge this disclaimer and continue at your ow
     xcoordinate=0.5
     ycoordinate=0.8
 
-image bg mojave setup = "Resources/bg_setup.png"
+image bg mojave setup = strawberry[900]
 image setup_feedback = "Resources/feedback.png"
 image mojave_setup = "Resources/setup-window.png"
 
@@ -47,19 +47,19 @@ image setup_send_feedback_info = Text("Your computer has been enrolled in the Al
 image setup_loader_text = Text("Initializing Setup Assistant...", font="Resources/systemfont/Light.ttf", size=14, style="_default")
 image setup_process_files = Text("Validating beta program files...", font="Resources/systemfont/Light.ttf", size=10, style="_default")
 image loader:
-    "mod_assets/images/gui/loader/1.png"
+    "Resources/loader/1.png"
     pause 0.125
-    "mod_assets/images/gui/loader/2.png"
+    "Resources/loader/2.png"
     pause 0.125
-    "mod_assets/images/gui/loader/3.png"
+    "Resources/loader/3.png"
     pause 0.125
-    "mod_assets/images/gui/loader/4.png"
+    "Resources/loader/4.png"
     pause 0.125
-    "mod_assets/images/gui/loader/5.png"
+    "Resources/loader/5.png"
     pause 0.125
-    "mod_assets/images/gui/loader/6.png"
+    "Resources/loader/6.png"
     pause 0.125
-    "mod_assets/images/gui/loader/7.png"
+    "Resources/loader/7.png"
     pause 0.125
     repeat
 
@@ -119,6 +119,7 @@ label setup:
     $ ui.close()
     $ choice_selected=ui.interact()
     hide setup_welcome_text
+    hide mojave setup header
     call setup_prepare_beta
     return
 
@@ -200,37 +201,8 @@ label setup_tos_game:
     hide setup_game_tos_info
     hide setup_game_tos_header
     hide setup_game_tos_text
-    call setup_ctf_mode
-    return
-
-label setup_ctf_mode:
-    show setup_ctf_header zorder 3:
-        xalign 0.5 yalign 0.18
-    show setup_ctf_info zorder 3:
-        xalign 0.5 yalign 0.3
-    show setup_ctf_details_text zorder 3:
-        xalign 0.5 yalign 0.5
-    show alice_chibi zorder 3:
-        xalign 0.3 yalign 1.0
-    show sayonika_chibi zorder 3:
-        xalign 0.7 yalign 1.0
-    python:
-        ui.hbox(xalign=xcoordinate,yalign=ycoordinate)
-        ui.textbutton("Skip", ui.returns("no-ctf"), style="confirm_button_negative", xalign=.5, xpadding=32)
-        ui.textbutton("Enable", ui.returns("ctf"), style="confirm_button", xalign=.5, xpadding=32)
-        ui.close()
-        choice_selected=ui.interact()
-        if choice_selected == "no-ctf":
-            persistent.ctf_mode = False
-        elif choice_selected == "ctf":
-            persistent.ctf_mode = True
-    hide setup_ctf_header
-    hide setup_ctf_info
-    hide setup_ctf_details_text
-    hide alice_chibi
-    hide sayonika_chibi
     call setup_accounts
-return
+    return
 
 label setup_accounts:
     show setup_accounts_header zorder 3:

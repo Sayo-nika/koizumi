@@ -235,31 +235,31 @@ init -1 style confirm_prompt_details_text:
 
 init -1 style confirm_button:
     properties gui.button_properties("confirm_button")
-    color "007AFF"
+    color strawberry[500]
     font "Resources/systemfont/Bold.ttf"
-    hover_color "#5AC8FA"
+    hover_color strawberry[100]
     outlines []
     size 28
 
 init -1 style confirm_button_negative:
     properties gui.button_properties("confirm_button")
-    color "007AFF"
+    color strawberry[500]
     font "Resources/systemfont/Black.ttf"
-    hover_color "#5AC8FA"
+    hover_color strawberry[100]
     outlines []
 
 init -1 style confirm_button_text is navigation_button_text:
     properties gui.button_text_properties("confirm_button")
-    color "007AFF"
+    color strawberry[500]
     font "Resources/systemfont/Regular.ttf"
-    hover_color "#5AC8FA"
+    hover_color strawberry[100]
     outlines []
 
 init -1 style confirm_button_negative_text is navigation_button_text:
     properties gui.button_text_properties("confirm_button")
-    color "007AFF"
+    color strawberry[500]
     font "Resources/systemfont/Bold.ttf"
-    hover_color "#5AC8FA"
+    hover_color strawberry[100]
     outlines []
 
 init -1 style banner_frame:
