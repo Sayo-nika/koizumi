@@ -263,6 +263,7 @@ label splashscreen:
     if not persistent.first_run:
         call setup
         $ persistent.first_run = True
+        $ renpy.utter_restart()
 
     python:
         basedir = config.basedir.replace('\\', '/')

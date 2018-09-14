@@ -2,7 +2,7 @@
 # System Integrity Protection via GOBFADU policy
 # Author: Monika/D. Va (@GanstaKingofSA), Marquis Kurt (@alicerunsonfedora)
 # Copyright: (C) 2018
-image integrity_message = Text("Checking system integrity...", font="Resources/systemfont/Light.ttf", size=14, style="_default")
+image integrity_message = Text("Checking system integrity...", font="Resources/systemfont/OEM/Light.otf", size=14, style="_default")
 
 label Integrity:
     # Show Integrity check message before loading

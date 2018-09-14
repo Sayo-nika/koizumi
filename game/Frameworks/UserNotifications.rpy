@@ -218,7 +218,7 @@ init -1 style confirm_frame:
 
 init -1 style confirm_prompt_text:
     color "#000"
-    font "Resources/systemfont/Bold.ttf"
+    font "Resources/systemfont/OEM/Bold.otf"
     outlines []
     text_align 0.0
     size 32
@@ -226,7 +226,7 @@ init -1 style confirm_prompt_text:
 
 init -1 style confirm_prompt_details_text:
     color "#000"
-    font "Resources/systemfont/Regular.ttf"
+    font "Resources/systemfont/OEM/Regular.otf"
     outlines []
     # text_align 0.5
     xpadding 32
@@ -236,7 +236,7 @@ init -1 style confirm_prompt_details_text:
 init -1 style confirm_button:
     properties gui.button_properties("confirm_button")
     color strawberry[500]
-    font "Resources/systemfont/Bold.ttf"
+    font "Resources/systemfont/OEM/Bold.otf"
     hover_color strawberry[100]
     outlines []
     size 28
@@ -244,21 +244,21 @@ init -1 style confirm_button:
 init -1 style confirm_button_negative:
     properties gui.button_properties("confirm_button")
     color strawberry[500]
-    font "Resources/systemfont/Black.ttf"
+    font "Resources/systemfont/OEM/Black.otf"
     hover_color strawberry[100]
     outlines []
 
 init -1 style confirm_button_text is navigation_button_text:
     properties gui.button_text_properties("confirm_button")
     color strawberry[500]
-    font "Resources/systemfont/Regular.ttf"
+    font "Resources/systemfont/OEM/Regular.otf"
     hover_color strawberry[100]
     outlines []
 
 init -1 style confirm_button_negative_text is navigation_button_text:
     properties gui.button_text_properties("confirm_button")
     color strawberry[500]
-    font "Resources/systemfont/Bold.ttf"
+    font "Resources/systemfont/OEM/Bold.otf"
     hover_color strawberry[100]
     outlines []
 
@@ -269,7 +269,7 @@ init -1 style banner_frame:
 
 init -1 style banner_frame_app:
     color "333333"
-    font "Resources/systemfont/Regular.ttf"
+    font "Resources/systemfont/OEM/Regular.otf"
     first_indent 8
     size 20
     outlines []
@@ -278,7 +278,7 @@ init -1 style banner_frame_app:
 
 init -1 style banner_frame_sender:
     color "#000"
-    font "Resources/systemfont/Bold.ttf"
+    font "Resources/systemfont/OEM/Bold.otf"
     size 22
     outlines []
     text_align 0
@@ -286,7 +286,7 @@ init -1 style banner_frame_sender:
 
 init -1 style banner_frame_message:
     color "#000"
-    font "Resources/systemfont/Regular.ttf"
+    font "Resources/systemfont/OEM/Regular.otf"
     size 22
     outlines []
     text_align 0
@@ -296,7 +296,7 @@ init -1 style banner_dismiss is navigation_button_text:
     properties gui.button_text_properties("confirm_button")
     color "333"
     size 18
-    font "Resources/systemfont/Regular.ttf"
+    font "Resources/systemfont/OEM/Regular.otf"
     hover_color "000"
     outlines []
 
@@ -304,7 +304,7 @@ init -1 style banner_dismiss_text is navigation_button_text:
     properties gui.button_text_properties("confirm_button")
     color "000"
     size 18
-    font "Resources/systemfont/Bold.ttf"
+    font "Resources/systemfont/OEM/Bold.otf"
     hover_color "333"
     outlines []
 

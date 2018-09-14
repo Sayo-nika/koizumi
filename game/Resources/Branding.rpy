@@ -40,8 +40,8 @@ init python:
         return 0
 
 image alice_os_name = "Resources/logomark-white.png"
-image powered_by_text = Text("Powered by", font="Resources/systemfont/Regular.ttf")
-image boot_copyright = Text("(C) 2018 | AliceOS Developers. Licensed under GNU GPLv3. All rights reserved.", font="Resources/systemfont/Light.ttf", size=14)
+image powered_by_text = Text("Powered by", font="Resources/systemfont/OEM/Regular.otf")
+image boot_copyright = Text("(C) 2018 | AliceOS Developers. Licensed under GNU GPLv3. All rights reserved.", font="Resources/systemfont/OEM/Light.otf", size=14)
 
 image alice_os_logomark = "Resources/logomark.png"
 image alice_boot_mascot:

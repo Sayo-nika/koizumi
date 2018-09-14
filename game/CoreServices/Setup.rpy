@@ -25,27 +25,27 @@ By clicking \"I Agree\", you acknowledge this disclaimer and continue at your ow
     xcoordinate=0.5
     ycoordinate=0.8
 
-image bg mojave setup = strawberry[900]
+image bg mojave setup = strawberry[300]
 image setup_feedback = "Resources/feedback.png"
 image mojave_setup = "Resources/setup-window.png"
 
 # Setup Headers
-image mojave setup header = Text("Alice OS Setup Assistant", font="Resources/systemfont/Medium.ttf", size=38, style="_default")
-image setup_beta_check_header = Text("Enroll in the Beta Program", font="Resources/systemfont/Medium.ttf", size=38, style="_default")
-image setup_game_tos_header = Text("License Agreement", font="Resources/systemfont/Medium.ttf", size=38, style="_default")
-image setup_accounts_header = Text("Create Your Computer Account", font="Resources/systemfont/Medium.ttf", size=38, style="_default")
-image setup_ctf_header = Text("Select a Game Mode", font="Resources/systemfont/Medium.ttf", size=38, style="_default")
+image mojave setup header = Text("Alice OS Setup Assistant", font="Resources/systemfont/OEM/Medium.otf", size=38, style="_default")
+image setup_beta_check_header = Text("Enroll in the Beta Program", font="Resources/systemfont/OEM/Medium.otf", size=38, style="_default")
+image setup_game_tos_header = Text("License Agreement", font="Resources/systemfont/OEM/Medium.otf", size=38, style="_default")
+image setup_accounts_header = Text("Create Your Computer Account", font="Resources/systemfont/OEM/Medium.otf", size=38, style="_default")
+image setup_ctf_header = Text("Select a Game Mode", font="Resources/systemfont/OEM/Medium.otf", size=38, style="_default")
 
 # Welcome
-image setup_welcome_text = Text("Welcome to the Alice OS Setup Assistant. This tool will help you\nset up your computer and your game for playing.\n\nWhen you are ready, press 'Next'.",font="Resources/systemfont/Regular.ttf", size=22, style="_default")
+image setup_welcome_text = Text("Welcome to the Alice OS Setup Assistant. This tool will help you\nset up your computer and your game for playing.\n\nWhen you are ready, press 'Next'.",font="Resources/systemfont/OEM/Regular.otf", size=22, style="_default")
 
 # Beta Information
-image setup_prerelease_info = Text("We've detected that you're running a pre-release version of AliceOS.\nSome features of this operating system may not work properly\non your computer.\n\nIf you wish to roll back to a stable version of AliceOS, contact your\nsystem administrator.",font="Resources/systemfont/Regular.ttf", size=22, style="_default")
-image setup_send_feedback_info = Text("Your computer has been enrolled in the AliceOS Beta Program. You\ncan send feedback through the menu option on the main screen\nor in-game as seen below.",font="Resources/systemfont/Regular.ttf", size=22, style="_default")
+image setup_prerelease_info = Text("We've detected that you're running a pre-release version of AliceOS.\nSome features of this operating system may not work properly\non your computer.\n\nIf you wish to roll back to a stable version of AliceOS, contact your\nsystem administrator.",font="Resources/systemfont/OEM/Regular.otf", size=22, style="_default")
+image setup_send_feedback_info = Text("Your computer has been enrolled in the AliceOS Beta Program. You\ncan send feedback through the menu option on the main screen\nor in-game as seen below.",font="Resources/systemfont/OEM/Regular.otf", size=22, style="_default")
 
 # Indicators
-image setup_loader_text = Text("Initializing Setup Assistant...", font="Resources/systemfont/Light.ttf", size=14, style="_default")
-image setup_process_files = Text("Validating beta program files...", font="Resources/systemfont/Light.ttf", size=10, style="_default")
+image setup_loader_text = Text("Initializing Setup Assistant...", font="Resources/systemfont/OEM/Light.otf", size=14, style="_default")
+image setup_process_files = Text("Validating beta program files...", font="Resources/systemfont/OEM/Light.otf", size=10, style="_default")
 image loader:
     "Resources/loader/1.png"
     pause 0.125
@@ -64,20 +64,20 @@ image loader:
     repeat
 
 # Computer Accounts
-image setup_create_accnt = Text("Please create a username for this computer. Your password will be\ncreated automatically.",font="Resources/systemfont/Regular.ttf", size=22, style="_default")
+image setup_create_accnt = Text("Please create a username for this computer. Your password will be\ncreated automatically.",font="Resources/systemfont/OEM/Regular.otf", size=22, style="_default")
 
 # License Agreements
-image setup_game_tos_info = Text("AliceOS has detected that this game includes a License Agreement.\nPlease read the agreement and then agree to the terms.",font="Resources/systemfont/Regular.ttf", size=22, style="_default")
-image setup_tos_info = Text("AliceOS is licensed under the GNU GPL v3.\nPlease read the license summary below and agree to the terms.",font="Resources/systemfont/Regular.ttf", size=22, style="_default")
-image setup_game_tos_text = Text(gametos ,font="Resources/systemfont/Regular.ttf", size=16, style="_default")
-image setup_tos_text = Text(gnutos ,font="Resources/systemfont/Regular.ttf", size=16, style="_default")
+image setup_game_tos_info = Text("AliceOS has detected that this game includes a License Agreement.\nPlease read the agreement and then agree to the terms.",font="Resources/systemfont/OEM/Regular.otf", size=22, style="_default")
+image setup_tos_info = Text("AliceOS is licensed under the GNU GPL v3.\nPlease read the license summary below and agree to the terms.",font="Resources/systemfont/OEM/Regular.otf", size=22, style="_default")
+image setup_game_tos_text = Text(gametos ,font="Resources/systemfont/OEM/Regular.otf", size=16, style="_default")
+image setup_tos_text = Text(gnutos ,font="Resources/systemfont/OEM/Regular.otf", size=16, style="_default")
 
 # Finished
-image setup_complete_thankyou = Text("Your profile has been created and this computer is ready to be used.\n\nIf you need to enter a password, check the profiles file.\n\nThank you for choosing Alice OS.",font="Resources/systemfont/Regular.ttf", size=22, style="_default")
+image setup_complete_thankyou = Text("Your profile has been created and this computer is ready to be used.\n\nIf you need to enter a password, check the profiles file.\n\nThank you for choosing Alice OS.",font="Resources/systemfont/OEM/Regular.otf", size=22, style="_default")
 
 # Capture the Flag Mode
-image setup_ctf_info = Text("Please read the following experiment information.",font="Resources/systemfont/Regular.ttf", size=22, style="_default")
-image setup_ctf_details_text = Text("We're trying a new experiment for advanced users that affect the puzzle minigames in\nThe Angel Returns. We're introducing two modes to the game; the Basic Mode provides\nthe traditional puzzles to the game. The experimental Advanced Mode entails a Capture\nthe Flag-styled puzzles for developers and hackers alike.\n\nDo you want to enable this experiment?" ,font="Resources/systemfont/Regular.ttf", size=16, style="_default")
+image setup_ctf_info = Text("Please read the following experiment information.",font="Resources/systemfont/OEM/Regular.otf", size=22, style="_default")
+image setup_ctf_details_text = Text("We're trying a new experiment for advanced users that affect the puzzle minigames in\nThe Angel Returns. We're introducing two modes to the game; the Basic Mode provides\nthe traditional puzzles to the game. The experimental Advanced Mode entails a Capture\nthe Flag-styled puzzles for developers and hackers alike.\n\nDo you want to enable this experiment?" ,font="Resources/systemfont/OEM/Regular.otf", size=16, style="_default")
 
 # Chibis
 image alice_chibi:
@@ -118,6 +118,7 @@ label setup:
     $ ui.textbutton("Next", ui.returns("choice1"), style="confirm_button", xalign=.5)
     $ ui.close()
     $ choice_selected=ui.interact()
+    call screen alert("System Modified by Manufacturer", "This copy of AliceOS has been modified by your manufacturer, Sayonika. Your experience may vary from the standard AliceOS installation.", ok_action=Return(0))
     hide setup_welcome_text
     hide mojave setup header
     call setup_prepare_beta

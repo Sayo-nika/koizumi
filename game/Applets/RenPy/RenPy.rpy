@@ -52,7 +52,7 @@ init python:
 # in this file.
 
 # RSOD Information for Demo End (eg. 'Act 2 is missing')
-image rsod_corrupted_act_message = Text("ACT_FAULT_IN_NONACT_AREA", font="Resources/systemfont/Medium.ttf", size=24, color="#ffffff", style="_default")
+image rsod_corrupted_act_message = Text("ACT_FAULT_IN_NONACT_AREA", font="Resources/systemfont/OEM/Medium.otf", size=24, color="#ffffff", style="_default")
 
 label rsod_missing_act:
     scene rsod_bg
