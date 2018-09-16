@@ -25,7 +25,7 @@ By clicking \"I Agree\", you acknowledge this disclaimer and continue at your ow
     xcoordinate=0.5
     ycoordinate=0.8
 
-image bg mojave setup = strawberry[300]
+image bg mojave setup = aliceos_oem_colors[500]
 image setup_feedback = "Resources/feedback.png"
 image mojave_setup = "Resources/setup-window.png"
 
