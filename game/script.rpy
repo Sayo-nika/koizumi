@@ -23,10 +23,11 @@ label start:
     $ config.allow_skipping = True
 
 
-    if persistent.example_seen:
-        call tutorial_selection
-    else:
-        call example_chapter from _call_example_chapter
+    if persistent.playthrough == 0:
+        call example_chapter
+
+    elif persistent.playthrough == 1:
+        call rsod_missing_act
 
     return
 

@@ -1587,3 +1587,17 @@ style notify_frame:
 
 style notify_text:
     size gui.notify_text_size
+
+
+##
+## AliceOS Modifications for DDLC
+##
+
+screen input:
+
+    window:
+
+        style "nvl_window"
+        # style "mojave_text"
+        text prompt xalign 0.5 yalign 0.4
+        input id "input" xalign 0.5 yalign 0.6
