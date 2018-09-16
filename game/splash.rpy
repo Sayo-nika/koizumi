@@ -259,12 +259,7 @@ label splashscreen:
 
 
     default persistent.first_run = False
-    call oem_boot_screen
-    if not persistent.first_run:
-        call setup
-        $ persistent.first_run = True
-        $ renpy.utter_restart()
-
+    call bootloader
     python:
         basedir = config.basedir.replace('\\', '/')
 

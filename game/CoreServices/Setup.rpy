@@ -2,14 +2,13 @@
 # Post-install Setup Assistant (Pisa)
 # Author: Marquis Kurt (@alicerunsonfedora)
 # Copyright: (C) 2018
-
 init python:
     gametos = """\
 Doki Doki Endless Adventure is a Doki Doki Literature Club fan mod that is not
 affiliated with Team Salvato. It is desifned to be played only after the official
 game has been completed and contains spoilers for the official game. Game files
 for Doki Doki Literature Club are required to play this mod and can be downloaded
-for free at: {a=https://ddlc.moe}https://ddlc.mode{/a}.
+for free at: {a=https://ddlc.moe}https://ddlc.moe{/a}.
 
 By clicking \"I Agree\", you acknowledge this disclaimer and continue at your own risk.
 """
@@ -18,7 +17,8 @@ You may copy, distribute and modify the software as long as you track changes/da
 in source files. Any modifications to or software including (via compiler) GPL-licensed
 code must also be made available under the GPL along with build & install instructions.
 
-The full license can be viewed at {a="https://www.gnu.org/licenses/gpl.html"}https://www.gnu.org/licenses/gpl.html{/a}.
+The full license can be viewed at
+{a="https://www.gnu.org/licenses/gpl.html"}https://www.gnu.org/licenses/gpl.html{/a}.
 
 By clicking \"I Agree\", you acknowledge this disclaimer and continue at your own risk.
         """
@@ -30,22 +30,21 @@ image setup_feedback = "Resources/feedback.png"
 image mojave_setup = "Resources/setup-window.png"
 
 # Setup Headers
-image mojave setup header = Text("Alice OS Setup Assistant", font="Resources/systemfont/OEM/Medium.otf", size=38, style="_default")
-image setup_beta_check_header = Text("Enroll in the Beta Program", font="Resources/systemfont/OEM/Medium.otf", size=38, style="_default")
-image setup_game_tos_header = Text("License Agreement", font="Resources/systemfont/OEM/Medium.otf", size=38, style="_default")
-image setup_accounts_header = Text("Create Your Computer Account", font="Resources/systemfont/OEM/Medium.otf", size=38, style="_default")
-image setup_ctf_header = Text("Select a Game Mode", font="Resources/systemfont/OEM/Medium.otf", size=38, style="_default")
+image mojave setup header = Text("Alice OS Setup Assistant", style="setup_header_text")
+image setup_beta_check_header = Text("Enroll in the Beta Program", style="setup_header_text")
+image setup_game_tos_header = Text("License Agreement", style="setup_header_text")
+image setup_accounts_header = Text("Create Your Computer Account", style="setup_header_text")
 
 # Welcome
-image setup_welcome_text = Text("Welcome to the Alice OS Setup Assistant. This tool will help you\nset up your computer and your game for playing.\n\nWhen you are ready, press 'Next'.",font="Resources/systemfont/OEM/Regular.otf", size=22, style="_default")
+image setup_welcome_text = Text("Welcome to the Alice OS Setup Assistant. This tool will help you\nset up your computer and your game for playing.\n\nWhen you are ready, press 'Next'.", style="setup_details_text")
 
 # Beta Information
-image setup_prerelease_info = Text("We've detected that you're running a pre-release version of AliceOS.\nSome features of this operating system may not work properly\non your computer.\n\nIf you wish to roll back to a stable version of AliceOS, contact your\nsystem administrator.",font="Resources/systemfont/OEM/Regular.otf", size=22, style="_default")
-image setup_send_feedback_info = Text("Your computer has been enrolled in the AliceOS Beta Program. You\ncan send feedback through the menu option on the main screen\nor in-game as seen below.",font="Resources/systemfont/OEM/Regular.otf", size=22, style="_default")
+image setup_prerelease_info = Text("We've detected that you're running a pre-release version of AliceOS.\nSome features of this operating system may not work properly\non your computer.\n\nIf you wish to roll back to a stable version of AliceOS, contact your\nsystem administrator.", style="setup_details_text")
+image setup_send_feedback_info = Text("Your computer has been enrolled in the AliceOS Beta Program. You\ncan send feedback through the menu option on the main screen\nor in-game as seen below.", style="setup_details_text")
 
 # Indicators
-image setup_loader_text = Text("Initializing Setup Assistant...", font="Resources/systemfont/OEM/Light.otf", size=14, style="_default")
-image setup_process_files = Text("Validating beta program files...", font="Resources/systemfont/OEM/Light.otf", size=10, style="_default")
+image setup_loader_text = Text("Initializing Setup Assistant...", size=14, style="setup_minor_text")
+image setup_process_files = Text("Validating beta program files...", size=10, style="setup_minor_text")
 image loader:
     "Resources/loader/1.png"
     pause 0.125
@@ -64,42 +63,21 @@ image loader:
     repeat
 
 # Computer Accounts
-image setup_create_accnt = Text("Please create a username for this computer. Your password will be\ncreated automatically.",font="Resources/systemfont/OEM/Regular.otf", size=22, style="_default")
+image setup_create_accnt = Text("Please create a username for this computer. Your password will be\ncreated automatically.", style="setup_details_text")
 
 # License Agreements
-image setup_game_tos_info = Text("AliceOS has detected that this game includes a License Agreement.\nPlease read the agreement and then agree to the terms.",font="Resources/systemfont/OEM/Regular.otf", size=22, style="_default")
-image setup_tos_info = Text("AliceOS is licensed under the GNU GPL v3.\nPlease read the license summary below and agree to the terms.",font="Resources/systemfont/OEM/Regular.otf", size=22, style="_default")
-image setup_game_tos_text = Text(gametos ,font="Resources/systemfont/OEM/Regular.otf", size=16, style="_default")
-image setup_tos_text = Text(gnutos ,font="Resources/systemfont/OEM/Regular.otf", size=16, style="_default")
+image setup_game_tos_info = Text("AliceOS has detected that this game includes a License Agreement.\nPlease read the agreement and then agree to the terms.", style="setup_details_text")
+image setup_tos_info = Text("AliceOS is licensed under the GNU GPL v3.\nPlease read the license summary below and agree to the terms.", style="setup_details_text")
+image setup_game_tos_text = Text(gametos, size=16, style="setup_details_text")
+image setup_tos_text = Text(gnutos, size=16, style="setup_details_text")
 
 # Finished
-image setup_complete_thankyou = Text("Your profile has been created and this computer is ready to be used.\n\nIf you need to enter a password, check the profiles file.\n\nThank you for choosing Alice OS.",font="Resources/systemfont/OEM/Regular.otf", size=22, style="_default")
+image setup_complete_thankyou = Text("Your profile has been created and this computer is ready to be used.\n\nIf you need to enter a password, check the profiles file.\n\nThank you for choosing Alice OS.", style="setup_details_text")
 
-# Capture the Flag Mode
-image setup_ctf_info = Text("Please read the following experiment information.",font="Resources/systemfont/OEM/Regular.otf", size=22, style="_default")
-image setup_ctf_details_text = Text("We're trying a new experiment for advanced users that affect the puzzle minigames in\nThe Angel Returns. We're introducing two modes to the game; the Basic Mode provides\nthe traditional puzzles to the game. The experimental Advanced Mode entails a Capture\nthe Flag-styled puzzles for developers and hackers alike.\n\nDo you want to enable this experiment?" ,font="Resources/systemfont/OEM/Regular.otf", size=16, style="_default")
-
-# Chibis
-image alice_chibi:
-    "mod_assets/images/chibis/alice.png"
-    xoffset aliceOffset xzoom aliceZoom
-    block:
-        function randomPauseAlice
-        parallel:
-            function chibiAliceHop
-        repeat
-image sayonika_chibi:
-    "mod_assets/images/chibis/sayonika.png"
-    xoffset aliceOffset xzoom aliceZoom
-    block:
-        function randomPauseAlice
-        parallel:
-            function chibiAliceHop
-        repeat
         
 label setup:
     stop music fadeout 1.0
-    scene black with trueblack
+    scene black with Dissolve(2.5)
     window hide(None)
     show loader at truecenter
     show setup_loader_text:
@@ -108,7 +86,6 @@ label setup:
     pause 5.0
     show bg mojave setup zorder 2 with dissolve_scene_half
     window hide(None)
-    play music m1
     show mojave_setup zorder 2 at truecenter
     show mojave setup header zorder 3:
         xalign 0.5 yalign 0.18
@@ -118,7 +95,10 @@ label setup:
     $ ui.textbutton("Next", ui.returns("choice1"), style="confirm_button", xalign=.5)
     $ ui.close()
     $ choice_selected=ui.interact()
-    call screen alert("System Modified by Manufacturer", "This copy of AliceOS has been modified by your manufacturer, Sayonika. Your experience may vary from the standard AliceOS installation.", ok_action=Return(0))
+    if aliceos.oem_mode:
+        call screen alert("System Modified by Manufacturer", "This copy of AliceOS has been modified by your manufacturer, [aliceos.oem_name!t]. Your experience may vary from the standard AliceOS installation.", ok_action=Return(0))
+    else:
+        pass
     hide setup_welcome_text
     hide mojave setup header
     call setup_prepare_beta
@@ -164,7 +144,7 @@ label setup_tos:
     show setup_tos_info zorder 3:
         xalign 0.5 yalign 0.3
     show setup_tos_text zorder 3:
-        xalign 0.5 yalign 0.5
+        xalign 0.5 yalign 0.6
     $ ui.vbox(xalign=xcoordinate,yalign=ycoordinate)
     $ ui.textbutton("Agree", ui.returns("choice1"), style="confirm_button", xalign=.5)
     $ ui.close()
@@ -186,7 +166,7 @@ label setup_tos_game:
     show setup_game_tos_info zorder 3:
         xalign 0.5 yalign 0.3
     show setup_game_tos_text zorder 3:
-        xalign 0.5 yalign 0.5
+        xalign 0.5 yalign 0.6
     $ ui.vbox(xalign=xcoordinate,yalign=ycoordinate)
     $ ui.textbutton("Agree", ui.returns("choice1"), style="confirm_button", xalign=.5)
     $ ui.close()
@@ -225,8 +205,6 @@ label setup_accounts:
 
 label setup_complete:
     hide setup_create_accnt
-    hide bg mojave setup
-    show menu_bg zorder 1
     hide loader
     python:
         with open(config.basedir + '/game/profiles.moj', 'w+') as f:

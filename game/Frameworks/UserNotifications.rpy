@@ -175,7 +175,7 @@ screen notify(message):
             hbox:
                 xsize 628
                 hbox:
-                    add "mod_assets/logo.png":
+                    add "gui/window_icon.png":
                         size (24, 24)
                     python:
                         nameofapp = config.name.upper()
@@ -197,116 +197,6 @@ transform -1 banner_appear:
     on hide:
         yalign 0.025 xalign 0.5
         linear 0.25 yalign -1.0
-
-# Stylesheet
-init -1 style confirm_frame is gui_frame
-init -1 style confirm_prompt is gui_prompt
-init -1 style confirm_prompt_text is gui_prompt_text
-init -1 style confirm_prompt_details is gui_prompt
-init -1 style confirm_prompt_details_text is gui_prompt_text
-init -1 style confirm_button is gui_medium_button
-init -1 style confirm_button_negative is gui_medium_button
-init -1 style confirm_button_text is gui_medium_button_text
-init -1 style confirm_button_negative_text is gui_medium_button_text
-
-
-init -1 style confirm_frame:
-    background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
-    padding gui.confirm_frame_borders.padding
-    xalign .5
-    yalign .5
-
-init -1 style confirm_prompt_text:
-    color "#000"
-    font "Resources/systemfont/OEM/Bold.otf"
-    outlines []
-    text_align 0.0
-    size 32
-    layout "subtitle"
-
-init -1 style confirm_prompt_details_text:
-    color "#000"
-    font "Resources/systemfont/OEM/Regular.otf"
-    outlines []
-    # text_align 0.5
-    xpadding 32
-    ypadding 8
-    layout "tex"
-
-init -1 style confirm_button:
-    properties gui.button_properties("confirm_button")
-    color strawberry[500]
-    font "Resources/systemfont/OEM/Bold.otf"
-    hover_color strawberry[100]
-    outlines []
-    size 28
-
-init -1 style confirm_button_negative:
-    properties gui.button_properties("confirm_button")
-    color strawberry[500]
-    font "Resources/systemfont/OEM/Black.otf"
-    hover_color strawberry[100]
-    outlines []
-
-init -1 style confirm_button_text is navigation_button_text:
-    properties gui.button_text_properties("confirm_button")
-    color strawberry[500]
-    font "Resources/systemfont/OEM/Regular.otf"
-    hover_color strawberry[100]
-    outlines []
-
-init -1 style confirm_button_negative_text is navigation_button_text:
-    properties gui.button_text_properties("confirm_button")
-    color strawberry[500]
-    font "Resources/systemfont/OEM/Bold.otf"
-    hover_color strawberry[100]
-    outlines []
-
-init -1 style banner_frame:
-    background Frame(["gui/banner_frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
-    xalign .5
-    yalign .5
-
-init -1 style banner_frame_app:
-    color "333333"
-    font "Resources/systemfont/OEM/Regular.otf"
-    first_indent 8
-    size 20
-    outlines []
-    text_align 0
-    layout "tex"
-
-init -1 style banner_frame_sender:
-    color "#000"
-    font "Resources/systemfont/OEM/Bold.otf"
-    size 22
-    outlines []
-    text_align 0
-    layout "tex"
-
-init -1 style banner_frame_message:
-    color "#000"
-    font "Resources/systemfont/OEM/Regular.otf"
-    size 22
-    outlines []
-    text_align 0
-    layout "tex"
-
-init -1 style banner_dismiss is navigation_button_text:
-    properties gui.button_text_properties("confirm_button")
-    color "333"
-    size 18
-    font "Resources/systemfont/OEM/Regular.otf"
-    hover_color "000"
-    outlines []
-
-init -1 style banner_dismiss_text is navigation_button_text:
-    properties gui.button_text_properties("confirm_button")
-    color "000"
-    size 18
-    font "Resources/systemfont/OEM/Bold.otf"
-    hover_color "333"
-    outlines []
 
 ## Screen Definitions
 define allow_un = "Send Notifications"
