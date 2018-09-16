@@ -78,7 +78,7 @@ init 2:
         outlines []
 
     style hyperlink_text is aliceos_bold:
-        color blueberry[500]
+        color strawberry[500]
 
 
     style confirm_frame:
@@ -104,27 +104,27 @@ init 2:
 
     style confirm_button is aliceos_bold:
         properties gui.button_properties("confirm_button")
-        color blueberry[500]
-        hover_color blueberry[100]
+        color strawberry[500]
+        hover_color strawberry[100]
         outlines []
         size 28
 
     style confirm_button_negative is aliceos_bold:
         properties gui.button_properties("confirm_button")
-        color blueberry[500]
-        hover_color blueberry[100]
+        color strawberry[500]
+        hover_color strawberry[100]
         outlines []
 
     style confirm_button_text is aliceos_regular:
         properties gui.button_text_properties("confirm_button")
-        color blueberry[500]
-        hover_color blueberry[100]
+        color strawberry[500]
+        hover_color strawberry[100]
         outlines []
 
     style confirm_button_negative_text is aliceos_bold:
         properties gui.button_text_properties("confirm_button")
-        color blueberry[500]
-        hover_color blueberry[100]
+        color strawberry[500]
+        hover_color strawberry[100]
         outlines []
 
     style banner_frame:
