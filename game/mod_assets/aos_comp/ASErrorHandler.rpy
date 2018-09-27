@@ -18,7 +18,7 @@ screen ThrowASError(error_type):
     zorder 100
     style_prefix "rsod"
     add "#c6262e"
-    add "Resources/rsod_overlay.png"
+    add "mod_assets/aos_comp/rsod_overlay.png"
 
     text _(":("):
         style "rsod_emoticon"
@@ -31,7 +31,7 @@ screen ThrowASError(error_type):
         yalign 0.7
 
     vbox:
-        xalign 0.15
+        xalign 0.175
         yalign 0.85
 
         text _("If you'd like to know more, you can search online later for this error: "):
