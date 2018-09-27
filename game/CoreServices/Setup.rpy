@@ -666,8 +666,8 @@ screen pisa_element(step, step_details, extra_info, require_input, has_back, adv
     add "Resources/pisa/background.png"
 
     frame:
-        xalign 0.9
-        yalign 1.0
+        xalign 0.5
+        yalign 0.5
         style "confirm_setup_frame"
         has vbox:
             spacing 16
