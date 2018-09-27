@@ -145,7 +145,6 @@ init python:
     build.archive("scripts",build.name)
     build.archive("mod_assets",build.name)
     build.archive("submods",build.name)
-    build.archive("aliceos",build.name)
 
     # folder / files to put in archives
     build.classify("game/mod_assets/**","mod_assets")
@@ -153,13 +152,6 @@ init python:
     build.classify('game/**.rpyc',"scripts")
     build.classify('game/advanced_scripts/**',"scripts")
     build.classify('game/original_story_scripts/**',"scripts")
-
-    # AliceOS-related files
-    build.classify("game/Applets/**", "aliceos")
-    build.classify("game/CoreServices/**", "aliceos")
-    build.classify("game/Frameworks/**", "aliceos")
-    build.classify("game/Resources/**", "aliceos")
-    build.classify("game/gui/**", "aliceos")
 
     # stuff to ignore
     build.classify('**~', None)
