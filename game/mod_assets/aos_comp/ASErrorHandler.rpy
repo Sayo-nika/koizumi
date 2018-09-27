@@ -25,7 +25,7 @@ screen ThrowASError(error_type):
         xalign 0.075
         yalign 0.4
 
-    text _("AliceOS ran into an error it couldn't handle and\nneeds to restart."):
+    text _("DDEA ran into an error it couldn't handle and\nneeds to restart."):
         style "rsod_title_text"
         xalign 0.3
         yalign 0.7

@@ -9,7 +9,7 @@ screen alert(title, message, ok_action):
     modal True
     zorder 200
     style_prefix "confirm"
-    add "Resources/systemui/overlay_confirm.png"
+    add "mod_assets/aos_comp/overlay_confirm.png"
 
     frame:
         has vbox:
@@ -129,7 +129,7 @@ screen ask_permission(app_name, action, no_action,  yes_action):
             textbutton _("OK") action yes_action
 
 # Banner
-screen banner(applet, title, message, response):
+screen banner(title, message, response):
     zorder 100
     frame at banner_appear:
         style "banner_frame"
@@ -143,9 +143,9 @@ screen banner(applet, title, message, response):
             hbox:
                 xsize 628
                 hbox:
-                    add "Applets/" + applet.app_dir + "/Resources/icons/" + applet.icons[24]
+                    add "mod_assets/DDLCModTemplateLogo.png"
                     python:
-                        appname = applet.long_name.upper()
+                        appname = "Doki Doki Endless Adventure"
                     text appname:
                         style "banner_frame_app"
                 textbutton _("Respond") action response:
