@@ -115,7 +115,7 @@ label ca3:
     sm 1i "I’m with him, so..."
     show sayonika at t22
     show natsuki at f21
-    n 3bd "Well, duh! He doesn’t have a clue about the bakery, how would he manage to get here without you? ANyway, what did you want?"
+    n 3bd "Well, duh! He doesn’t have a clue about the bakery, how would he manage to get here without you? Anyway, what did you want?"
     show sayonika at f22
     show natsuki at t21
     sm "Just a donut will do..."
@@ -289,8 +289,8 @@ label ca3:
     sm 3b "Ehehe~ she’s quite a gal!"
     mc "Don’t give me a heart attack, honestly... I thought she was being monitored to prevent this kind of stuff."
     sm 2q "Come on, you have to admit that was a good pun!"
-    "Reluctantly, I follow Sayonika to the public library." 
-    "I didn't really know Sayonika well, despite the fact that we bumped into each other without thinking twice during spring break." 
-    "However, Natsuki seems to be pretty comfortable with her." 
-    "{i}Well, this will be a very, very interesting summer...{/i}"
+    "Reluctantly, I follow Sayonika to the public library. Maybe I should snitch on Sayori." 
+    "But I don't really know Sayonika well. Maybe Yuri enjoys her stupid jokes." 
+    "Natsuki seemed to be quite comfortable with her around." 
+    "{i}This will be a very interesting summer...{/i}"
     return

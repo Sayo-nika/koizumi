@@ -21,10 +21,13 @@ install:
     # we're copying over the template files into the renpy SDK
     # and CD into the renpy
     
-    - bash ./koizumi/setup.sh
+    - bash ./koizumi/travis/setup.sh
     
     # Remove README.html to prevent errors.
     - rm -rf koizumi/README.html && cp -vRf koizumi/* mod/
+    
+    - bash koizumi/travis/inject_version.sh
+    
     
     - cd renpy
 
