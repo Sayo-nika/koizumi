@@ -666,8 +666,8 @@ screen pisa_element(step, step_details, extra_info, require_input, has_back, adv
     add "Resources/pisa/background.png"
 
     frame:
-        xalign 0.9
-        yalign 1.0
+        xalign 0.5
+        yalign 0.5
         style "confirm_setup_frame"
         has vbox:
             spacing 16
@@ -731,18 +731,5 @@ label setup:
   scene black with Dissolve(2.5)
   pause 0.5
   $ quick_menu = False
-  call screen pisa_element(setup.general_step_titles[0], setup.general_step_descriptions[0], extra_info=None, has_back=False, require_input=None, advance_type=0, ok_action=Return(0))
-  call screen pisa_element(setup.general_step_titles[1], setup.general_step_descriptions[1], extra_info=None, has_back=True, require_input=None, advance_type=0, ok_action=Return(0))
-  call screen pisa_element(setup.general_step_titles[2], setup.general_step_descriptions[2], extra_info=setup.gnulicense, has_back=True, require_input=None, advance_type=1, ok_action=Return(0))
   call screen pisa_element(setup.general_step_titles[3], setup.general_step_descriptions[3], extra_info=license, has_back=True, require_input=None, advance_type=1, ok_action=Return(0))
-  call screen pisa_element(setup.general_step_titles[4], setup.general_step_descriptions[4], extra_info=oem_info, has_back=True, require_input=None, advance_type=0, ok_action=Return(0))
-  call screen pisa_element(setup.general_step_titles[5], setup.general_step_descriptions[5], extra_info=None, has_back=True, require_input=True, advance_type=3, ok_action=Return(input))
-  python:
-    message = _return
-    if not isinstance(message, basestring) or message == "":
-      renpy.call_screen("ThrowASError", error_type=aliceos_default_errors["setup_fail"])
-      renpy.utter_restart()
-    else:
-      persistent.playername = _return
-  call screen pisa_element(setup.general_step_titles[6], setup.general_step_descriptions[6], extra_info=None, has_back=True, require_input=None, advance_type=2, ok_action=Return(0))
   return

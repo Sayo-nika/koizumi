@@ -11,7 +11,15 @@ define gui.show_name = True
 define config.version = "1.1.1"
 
 # text placed on about screen
-define gui.about = _("")
+define gui.about = _("""\
+{=aliceos_regular}DDEA is built off of the {a=https://aliceos.app}AliceOS platform{/a}, provided by Project Alice and licensed under the GNU GPL v3. {a=https://www.gnu.org/licenses/gpl.html}Know your rights >{/a}
+
+For more information regarding specific customizations to AliceOS, please contact your AliceOS provider with the following details:
+
+OEM Name: Sayonika VN Team
+Website: {a=https://github.com/Sayo-nika/koizumi}https://github.com/Sayo-nika/koizumi{/a}
+Support Email: {a=mailto:hello@sayonika.moe}hello@sayonika.moe{/a}{/style}
+""")
 
 # short name used in executables and dirs.
 # ASCII-only, no spaces, no colons, no semis
