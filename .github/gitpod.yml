@@ -3,12 +3,10 @@ pulls:
   perform: true
 # Customize a comment to post on a pull request. Comment out to use the default
 # comment: "Workspace for this GitHub Pull Request"
-  labels:
-    - help wanted
  
 issues:
 # set to true to enable for issues
-  perform: false
+  perform: true
 # issues with these labels will be considered. Set to `[]` to disable for issues
   labels:
     - help wanted
