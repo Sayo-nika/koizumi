@@ -2,11 +2,11 @@ pulls:
 # Enable for pull requests
   perform: true
 # Customize a comment to post on a pull request. Comment out to use the default
-#  comment:
+  comment: "/liveshare"
 
 issues:
-# enable for issues
-  perform: true
+# set to true to enable for issues
+  perform: false
 # issues with these labels will be considered. Set to `[]` to disable for issues
   labels:
     - help wanted
