@@ -1,4 +1,6 @@
-# Doki Doki Endless Adventure! (Codename BraveSail)
+This repository is no longer maintained. See you soon for the next Sayonika VN project!
+
+# Doki Doki Endless Adventure! (Codename BraveSail) - EOL
 A community-driven, open-ended Doki Doki Literature Club Mod.
 
 ![Sample screenshot](https://media.discordapp.net/attachments/474123291079081986/493820633810206730/screenshot0001_9-24-2018.png)
